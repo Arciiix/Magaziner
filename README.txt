@@ -1,0 +1,1 @@
+This is a simple magaziner, like you can see you storage, you can easily add new products. It's just for fun, so it's not good! :)

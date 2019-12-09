@@ -9,9 +9,9 @@ Path/version logs:
 
 
 
-
 version ~0.4:
 Added basic design for homepage. Now it shows a table and a add button.
+
 
 
 

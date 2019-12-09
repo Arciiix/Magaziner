@@ -14,8 +14,6 @@ Added basic design for homepage. Now it shows a table and a add button.
 
 
 
-
-
 version 0.2
 Added basic html files and css stylesheet.
 

@@ -3,6 +3,45 @@ body
     font-family: 'Roboto', sans-serif;
     background-color: #74EBD5;
     background-image: linear-gradient(to right, #74EBD5 0%, #9FACE6 100%);
-
+    font-size: 30px;
 
 }
+
+#addingForm
+{
+    align-content: center;
+    justify-content: center;
+    display: inline-block; 
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+
+input
+{
+    font-family: 'Roboto', sans-serif;
+    width: 350px;
+    height: 40px;
+    border: none;
+    font-size: 25px;
+    margin-top: 5px;
+    border-bottom: 1.5px solid black;
+    transition: border-bottom 0.3s;
+  }
+
+  input:focus
+  {
+      border-bottom: 1.5px solid rgb(51, 126, 196);
+  }
+
+span
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #373737;
+}
+
+

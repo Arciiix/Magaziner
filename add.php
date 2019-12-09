@@ -15,7 +15,38 @@
 </head>
 <body>
 
-<center><h1>This page is in built!</h1></center>
+<center>
+
+<h1>Dodaj produkt</h1>
+
+<div id = "addingForm">
+
+<label>
+<span>Nazwa</span>
+</br>
+<input type="text" />
+</label>
+
+</br>
+
+<label>
+<span>Kategoria</span>
+</br>
+<input type="text" />
+</label>
+</br>
+
+<label>
+<span>Data ważności (dzień-miesiąc-rok)</span>
+</br>
+<input type="text" />
+</label>
+</br>
+
+</div>
+
+
+</center>
 
 </body>
 </html>

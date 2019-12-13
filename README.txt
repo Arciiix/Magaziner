@@ -7,9 +7,13 @@ Path/version logs:
 
 
 
+version 0.5
+Updated add webpage - added button. Updated homepage - added uncompleted checkboxes, which will select elements to delete, so added delete button. Finally changed some colors.
 
+version 0.4
+Added add webpage - and with it very beautiful inputs
 
-version ~0.4:
+version 0.3
 Added basic design for homepage. Now it shows a table and a add button.
 
 

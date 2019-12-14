@@ -37,13 +37,42 @@ function checkStatus(box)
 function select(box)
 {
     checkStatus(box);
+    let all = (box.target.parentNode.parentNode.children);
+    if(box.target.checked === true)
+    {
+    for (var i = 0; i < all.length; i++) {
+        all[i].style.border = "1.5px solid #f7395f";            //#cc3549
+    }
+    }
+    else
+    {
+     for (var i = 0; i < all.length; i++) {
+        all[i].style.border = "1px solid #9ea7af";
+     }
+    }
+
 }
 
 function remove()
 {
     checkStatus();
 
-    console.log(selected); //ktory index w mysqlu ma ten wiersz (bedzie przypisywany ten atryb podczas pobierania elementow, a jest on potrzebny do usuniecia danej rzeczy)
-    console.log(whichIsSelected); //ktory z kolei wiersz z dokumentu jest wybrany, powiedzmy wybiermay drugi wiersz wiec tam jest 1, bo tableta zaczyna sie od 0
-    //podczas usuwania tej rzeczy najlepiej odniesc sie do checkboxa numer whichIsSelected i usunac jego rodzica rodzica (dziadka), czyli wiersz tabeli
+    let toRemove = new Array();
+
+    whichIsSelected.forEach(elem =>
+        {
+            toRemove.push(checkboxes[elem]);
+        })
+
+ 
+        let json = JSON.stringify(selected);
+
+        console.log(json);
+
+
+    toRemove.forEach(elem => elem.parentNode.parentNode.remove());
+
+
+
 }
+

@@ -1,11 +1,15 @@
 This is a simple magaziner, like you can see your storage, you can easily add new products. It's just for fun, so it's not good! :)
 
 
+TO ADD:
+Checkbox that mark every checkboxes
 
 Path/version logs:
 
 
 
+version 0.6
+Finished checkboxes. 
 
 version 0.5
 Updated add webpage - added button. Updated homepage - added uncompleted checkboxes, which will select elements to delete, so added delete button. Finally changed some colors.

@@ -32,24 +32,29 @@
 </thead>
 <tbody class="table-hover">
 <tr>
-<td class="text-center"><input type="checkbox" data-mysqlIndex = "1"/></td>
+<td class="text-center"><input type="checkbox" data-mysqlIndex = "4"/></td>
 <td class="text-center">Tutaj ma byc nazwa</td>
 <td class="text-center">Tutaj ma byc Kategoria</td>
 <td class="text-center">Tutaj ma byc data waznosci</td>
 </tr>
 <tr>
-<td class="text-center"><input type="checkbox" data-mysqlIndex = "2"/></td>
+<td class="text-center"><input type="checkbox" data-mysqlIndex = "5"/></td>
 <td class="text-center">Tutaj ma byc nazwa</td>
 <td class="text-center">Tutaj ma byc Kategoria</td>
 <td class="text-center">Tutaj ma byc data waznosci</td>
 </tr>
 <tr>
-<td class="text-center"><input type="checkbox" data-mysqlIndex = "3"/></td>
+<td class="text-center"><input type="checkbox" data-mysqlIndex = "6"/></td>
 <td class="text-center">Tutaj ma byc nazwa</td>
 <td class="text-center">Tutaj ma byc Kategoria</td>
 <td class="text-center">Tutaj ma byc data waznosci</td>
 </tr>
-
+<tr>
+<td class="text-center"><input type="checkbox" data-mysqlIndex = "6"/></td>
+<td class="text-center">Tutaj ma byc nazwa</td>
+<td class="text-center">Tutaj ma byc Kategoria</td>
+<td class="text-center">Tutaj ma byc data waznosci</td>
+</tr>
 </tbody>
 </table>
 

@@ -2,18 +2,24 @@ var checkboxes = new Array();
 let removeIcon = document.getElementById("removeIcon");
 
 
-checkboxes = document.querySelectorAll("input[type=checkbox]");
+
 
 removeIcon.addEventListener("click", remove);
+
+setTimeout(() =>
+{
+checkboxes = document.querySelectorAll("input[type=checkbox]");
 checkboxes.forEach(box =>
 {   
     box.addEventListener("click", btn => select(btn));
 });
+checkboxes.forEach(box => checkStatus(box));
+}, 3000);
 
 let selected = new Array();
 let whichIsSelected = new Array();
 
-checkboxes.forEach(box => checkStatus(box));
+
 
 function checkStatus(box)
 {
@@ -24,7 +30,7 @@ function checkStatus(box)
     {
         if(checkboxes[i].checked === true)
         {
-            selected.push(checkboxes[i].getAttribute('data-mysqlIndex'));
+            selected.push(checkboxes[i].getAttribute('data-mysql-index'));
             whichIsSelected.push(i);
         }
     }
@@ -37,19 +43,17 @@ function checkStatus(box)
 function select(box)
 {
     checkStatus(box);
-    let all = (box.target.parentNode.parentNode.children);
+    let row =  box.target.parentNode.parentNode;
     if(box.target.checked === true)
     {
-    for (var i = 0; i < all.length; i++) {
-        all[i].style.border = "1.5px solid #f7395f";            //#cc3549
-    }
-    }
-    else
+    row.style.opacity = "0.25";
+    } else
     {
-     for (var i = 0; i < all.length; i++) {
-        all[i].style.border = "1px solid #9ea7af";
-     }
+        row.style.opacity = "1";
     }
+
+
+
 
 }
 
@@ -75,4 +79,5 @@ function remove()
 
 
 }
+
 

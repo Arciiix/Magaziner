@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <noscript><center><h1>Please, enable javascript to access this page!</h1></center></noscript>
+
 </head>
 <body>
 
@@ -21,7 +23,7 @@
 <label title="Usuń wybrane rzeczy"> <i id="removeIcon" class="fa fa-trash" style="margin-right: 20px; float: right; font-size: 60px"aria-hidden="true"></i></label>
 </h1>
 
-<table class="table-fill">
+<table id = "mainTable" class="table-fill">
 <thead>
 <tr>
 <th></th>
@@ -30,35 +32,12 @@
 <th class="text-center">Data ważności</th>
 </tr>
 </thead>
-<tbody class="table-hover">
-<tr>
-<td class="text-center"><input type="checkbox" data-mysqlIndex = "4"/></td>
-<td class="text-center">Tutaj ma byc nazwa</td>
-<td class="text-center">Tutaj ma byc Kategoria</td>
-<td class="text-center">Tutaj ma byc data waznosci</td>
-</tr>
-<tr>
-<td class="text-center"><input type="checkbox" data-mysqlIndex = "5"/></td>
-<td class="text-center">Tutaj ma byc nazwa</td>
-<td class="text-center">Tutaj ma byc Kategoria</td>
-<td class="text-center">Tutaj ma byc data waznosci</td>
-</tr>
-<tr>
-<td class="text-center"><input type="checkbox" data-mysqlIndex = "6"/></td>
-<td class="text-center">Tutaj ma byc nazwa</td>
-<td class="text-center">Tutaj ma byc Kategoria</td>
-<td class="text-center">Tutaj ma byc data waznosci</td>
-</tr>
-<tr>
-<td class="text-center"><input type="checkbox" data-mysqlIndex = "6"/></td>
-<td class="text-center">Tutaj ma byc nazwa</td>
-<td class="text-center">Tutaj ma byc Kategoria</td>
-<td class="text-center">Tutaj ma byc data waznosci</td>
-</tr>
+<tbody id="tableContent" class="table-hover">
+
 </tbody>
 </table>
 
-
+<script type="text/javascript" src="scripts/read.js"></script>
 <script type="text/javascript" src="scripts/select.js"></script>
 
 </body>

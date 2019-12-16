@@ -17,14 +17,14 @@
 
 <center>
 
-<h1>Dodaj produkt</h1>
+<h1 id="header" >Dodaj produkt</h1>
 
 <div id = "addingForm">
 
 <label>
 <span>Nazwa</span>
 </br>
-<input type="text" />
+<input id="name" type="text" />
 </label>
 
 </br>
@@ -32,26 +32,29 @@
 <label>
 <span>Kategoria</span>
 </br>
-<input type="text" />
+<input id = "category" type="text" />
 </label>
 </br>
 
 <label>
-<span>Data ważności (dzień-miesiąc-rok)</span>
+<span>Data ważności (dzień.miesiąc.rok)</span>
 </br>
-<input type="text" />
+<input id="date" type="text" />
 </label>
 </br>
 
 <center>
 <label>
-<button>Dodaj</button>
+<button id="submitBtn" >Dodaj</button>
 </label>
 </center>
 </div>
 
 
 </center>
+
+
+<script type="text/javascript" src="scripts/add.js"></script>
 
 </body>
 </html>

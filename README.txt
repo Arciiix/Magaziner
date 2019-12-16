@@ -6,7 +6,8 @@ Checkbox that mark every checkboxes
 
 Path/version logs:
 
-
+version 0.7
+Added database in MySql, so getting table elements and displaying them at the main page as the table. Also completed add form - now it works. 
 
 version 0.6
 Finished checkboxes. 

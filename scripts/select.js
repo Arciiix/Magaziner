@@ -69,9 +69,25 @@ function remove()
         })
 
  
-        let json = JSON.stringify(selected);
 
-        console.log(json);
+        var removeList = selected.join("a");
+
+        const formData = new FormData();
+        formData.append('toremove',removeList);
+
+
+        fetch("scripts/server/delete.php",
+        {
+            method: "POST",
+            body: formData
+        }).then(res => res.text())
+        .then(res =>
+            {
+                if(res === "Error")
+                {
+                    console.log("ERROR!");
+                }
+            });
 
 
     toRemove.forEach(elem => elem.parentNode.parentNode.remove());

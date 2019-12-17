@@ -2,9 +2,13 @@ This is a simple magaziner, like you can see your storage, you can easily add ne
 
 
 TO ADD:
-Checkbox that mark every checkboxes
+1.Checkbox that mark every checkboxes
+2. Edit button
 
 Path/version logs:
+
+version 0.8
+Added remove future.
 
 version 0.7
 Added database in MySql, so getting table elements and displaying them at the main page as the table. Also completed add form - now it works. 

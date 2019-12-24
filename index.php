@@ -26,7 +26,7 @@
 <table id = "mainTable" class="table-fill">
 <thead>
 <tr>
-<th></th>
+<th class="text-center"><input id = "mainCheckbox" type="checkbox" /></th>
 <th class="text-center">Nazwa</th>
 <th class="text-center">Kategoria</th>
 <th class="text-center">Data ważności</th>

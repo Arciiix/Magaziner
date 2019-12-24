@@ -6,9 +6,11 @@ let removeIcon = document.getElementById("removeIcon");
 
 removeIcon.addEventListener("click", remove);
 
-setTimeout(() =>
+setTimeout(async () =>
 {
-checkboxes = document.querySelectorAll("input[type=checkbox]");
+var checkboxesHelp = await document.querySelectorAll("input[type=checkbox]");
+checkboxes = Object.values(checkboxesHelp);
+checkboxes.shift();
 checkboxes.forEach(box =>
 {   
     box.addEventListener("click", btn => select(btn));
@@ -16,13 +18,40 @@ checkboxes.forEach(box =>
 checkboxes.forEach(box => checkStatus(box));
 }, 3000);
 
+let mainCheckbox = document.querySelector("#mainCheckbox");
+
+setTimeout(() => {
+    mainCheckbox.addEventListener("click", () =>
+{
+if(mainCheckbox.checked)
+{
+    checkboxes.forEach(box =>
+    {
+        box.checked = true;
+    })
+}
+else
+{
+    checkboxes.forEach(box =>
+        {
+            box.checked = false;
+        })
+}
+
+});
+}, 3100);
+
+
 let selected = new Array();
 let whichIsSelected = new Array();
 
 
 
+
+
 function checkStatus(box)
 {
+
     selected = [];
     whichIsSelected = [];
 
@@ -76,7 +105,7 @@ function remove()
         formData.append('toremove',removeList);
 
 
-        fetch("scripts/server/delete.php",
+      fetch("scripts/server/delete.php",
         {
             method: "POST",
             body: formData
@@ -88,7 +117,7 @@ function remove()
                     console.log("ERROR!");
                 }
             });
-
+            
 
     toRemove.forEach(elem => elem.parentNode.parentNode.remove());
 

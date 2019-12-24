@@ -7,6 +7,9 @@ TO ADD:
 
 Path/version logs:
 
+version 0.9
+Added checkbox, which selects all checkboxes.
+
 version 0.8
 Added remove future.
 
